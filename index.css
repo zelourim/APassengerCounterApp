@@ -1,0 +1,60 @@
+/* Ensure the body and html elements take up the full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures the background covers the full viewport */
+    background-image: url("station.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Allows flexible stacking of main content and footer */
+}
+
+/* Main content styling */
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin: auto; /* Centers the content vertically */
+}
+
+/* Footer styling */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+}
+
+.container {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: auto; 
+    
+   
+}
